@@ -10,7 +10,6 @@ import java.util.logging.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.entity.Player;
 
 import pl.luxdev.lol.Main;
 import pl.luxdev.lol.basic.Turret;

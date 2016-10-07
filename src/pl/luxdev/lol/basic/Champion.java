@@ -2,7 +2,6 @@ package pl.luxdev.lol.basic;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
-import pl.luxdev.lol.Main;
 import pl.luxdev.lol.managers.DataManager;
 import pl.luxdev.lol.types.ChampType;
 
