@@ -17,8 +17,8 @@ import pl.luxdev.lol.utils.ItemCrafter;
 
 public class PlayerJoinList implements Listener{
 	
-	public static ItemStack BlueTeamPicker = ItemCrafter.createItem(Material.INK_SACK, 1, (short) 12, ("Â§8[Â§6Wybierz TeamTypeÂ§8]"), ("Â§7Team: Â§bBLUE"));
-	public static ItemStack RedTeamPicker = ItemCrafter.createItem(Material.INK_SACK, 1, (short) 1, ("Â§8[Â§6Wybierz TeamTypeÂ§8]"), ("Â§7Team: Â§cRED"));
+	public static ItemStack BlueTeamPicker = ItemCrafter.createItem(Material.INK_SACK, 1, (short) 12, ("§8[§6Wybierz TeamType§8]"), ("§7Team: §bBLUE"));
+	public static ItemStack RedTeamPicker = ItemCrafter.createItem(Material.INK_SACK, 1, (short) 1, ("§8[§6Wybierz TeamType§8]"), ("§7Team: §cRED"));
 	
 	@EventHandler
 	public void onJoin(PlayerJoinEvent e){
@@ -29,11 +29,11 @@ public class PlayerJoinList implements Listener{
 		p.sendMessage("Witaj " + p.getName() + " Twoja klasa zostala ustawiona na: " + u.getChampion());
 		addItems(p);
 		
-//		TitleAPI.sendTabTitle(p, "Â§7â˜» Witaj na serwerze", "Â§6League Of Legends !");
-//		TitleAPI.sendFullTitle(p, 20*3, 20*20, 20*4, "Â§6%player% Witaj na serwerze Lola!", "Â§aWklad Prac: 35 KB, 28 Godzin, 3 Kawy, 3k lini kodu, Mapa: 3% Plugin: 15%");
-		TabTitle tabtitle = new TabTitle("Â§7â˜» Witaj na serwerze", "Â§6League Of Legends!");
+//		TitleAPI.sendTabTitle(p, "§7» Witaj na serwerze", "§6League Of Legends !");
+//		TitleAPI.sendFullTitle(p, 20*3, 20*20, 20*4, "§6%player% Witaj na serwerze Lola!", "§aWklad Prac: 35 KB, 28 Godzin, 3 Kawy, 3k lini kodu, Mapa: 3% Plugin: 15%");
+		TabTitle tabtitle = new TabTitle("§7» Witaj na serwerze", "§6League Of Legends!");
 		tabtitle.send(p);
-		Title title = new Title("Â§6%player% Witaj na serwerze Lola!", "Â§aWklad Prac: 35 KB, 28 Godzin, 3 Kawy, 3k lini kodu, Mapa: 3% Plugin: 15%", 3, 20, 4);
+		Title title = new Title("§6%player% Witaj na serwerze Lola!", "§aWklad Prac: 35 KB, 28 Godzin, 3 Kawy, 3k lini kodu, Mapa: 3% Plugin: 15%", 3, 20, 4);
 		title.send(p);
 		
 	}

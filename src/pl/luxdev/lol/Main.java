@@ -51,8 +51,10 @@ public class Main extends JavaPlugin implements Listener {
 	
 	private static void SpawnMiniontest(World world, Location spawn, Location walkTo){
 		Squid squid = world.spawn(spawn, Squid.class);
-		PathFinderGoalWalkTo walk = new PathFinderGoalWalkTo((EntityInsentient) squid, walkTo, 2);
-		walk.c();
+//TODO
+//		PathFinderGoalWalkTo walk = new PathFinderGoalWalkTo((EntityInsentient) squid, walkTo, 2);
+//		walk.c();
+		
 		Bukkit.broadcastMessage("Zrespiono moba, idzie sb tam gdzies xD");
 		//To nie ma prawa dzialac ale ok.. xD
 	}
